@@ -1,5 +1,6 @@
 import Script from "next/script";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Layout({
   className,
@@ -21,6 +22,7 @@ export default function Layout({
             <div className="pt-[90px]">
             {children}
             </div>
+            <Footer />
 
         </div>
       </div>
