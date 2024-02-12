@@ -4,14 +4,14 @@ export default function Navbar() {
     return (
         <nav className="h-[90px] flex items-center border-b-[1px] border-gray-900 fixed w-full">
             <div className="text-white w-[94%] mx-auto flex items-center justify-between">
-                <h1 className="text-[20px]">agencypackage.com</h1>
+                <Link href={"/"}>agencypackage.com</Link>
 
 
                 <div className="flex items-center gap-[40px] font-[500]">
                     <Link href={"/"}>
                     Features
                     </Link>
-                    <Link href={"/"}>
+                    <Link href={"/pricing"}>
                     Pricing
                     </Link>
                     <Link href={"/"}>
