@@ -12,7 +12,7 @@ export default function Pricing() {
                 <p className="text-[20px] leading-[30px] w-[60%] mx-auto mb-[100px]">Course & community hosting, sales funnels & checkouts, automated email & sms marketing, Calendars, CRM systems & all AI-tools.</p>
 
                 <div className="grid grid-cols-3 gap-[30px]">
-                    {pricingData.map(v => <PricingCard Obj={v} />)}
+                    {pricingData.map(v => <PricingCard key={v} Obj={v} />)}
                 </div>
             </div>
         </section>
