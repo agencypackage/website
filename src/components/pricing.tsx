@@ -31,8 +31,8 @@ const PricingCard = (props:any) => {
             <p>{props.Obj.bundleDescription}</p>
 
             <div className="mt-[40px] mb-[60px] flex flex-col gap-[14px]">
-                {props.Obj.features.map((v:any) => <div className="flex items-center gap-[8px]"><img className="w-[20px]" src="/checklist.png"></img>{v}</div>)}
-                {props.Obj.noFeatures.map((v:any) => <div className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/negativechecklist.png"></img>{v}</div>)}
+                {props.Obj.features.map((v:any) => <div key={v} className="flex items-center gap-[8px]"><img className="w-[20px]" src="/checklist.png"></img>{v}</div>)}
+                {props.Obj.noFeatures.map((v:any) => <div key={v} className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/negativechecklist.png"></img>{v}</div>)}
             </div>
 
             <Link className="block text-center py-[14px] rounded-full bg-blue-600" href={"/apply"}>
@@ -49,8 +49,8 @@ const ModifiedPricingCard = (props:any) => {
             <h2 className="text-[50px] bg-gradient-to-r from-blue-500 via-blue-400 via-blue-300 via-blue-400 to-blue-500 inline-block text-transparent bg-clip-text">{props.Obj.price} <span className="text-[20px]">{props.Obj.paymentPlan}</span></h2>
             <p>{props.Obj.bundleDescription}</p>
             <div className="mt-[40px] mb-[100px] flex flex-col gap-[14px]">
-                {props.Obj.features.map((v:any) => <div className="flex items-center gap-[8px]"><img className="w-[20px]" src="/checklist.png"></img>{v}</div>)}
-                {props.Obj.noFeatures.map((v:any) => <div className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/negativechecklist.png"></img>{v}</div>)}
+                {props.Obj.features.map((v:any) => <div key={v} className="flex items-center gap-[8px]"><img className="w-[20px]" src="/checklist.png"></img>{v}</div>)}
+                {props.Obj.noFeatures.map((v:any) => <div key={v} className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/negativechecklist.png"></img>{v}</div>)}
             </div>
 
             <Link className="block text-center py-[14px] rounded-full bg-blue-600" href={"/apply"}>
