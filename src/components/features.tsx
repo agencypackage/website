@@ -20,7 +20,7 @@ export default function Features() {
                 <h1 className="text-[60px] leading-[70px] w-[80%] font-[500] mx-auto mb-[20px]">Build with <span className="bg-gradient-to-r from-blue-500 via-blue-400 via-blue-300 via-blue-400 to-blue-500 inline-block text-transparent bg-clip-text">passion</span></h1>
                 <p className="text-[20px] leading-[30px] w-[60%] mx-auto mb-[60px]">Course & community hosting, sales funnels & checkouts, automated email & sms marketing, Calendars, CRM systems & all AI-tools.</p>
                 <div className="grid grid-cols-2 gap-[30px]">
-                    {featuresData.map(v => <FeatureCard Obj={v}/>)}
+                    {featuresData.map(v => <FeatureCard key={v} Obj={v}/>)}
                 </div>
             </div>
         </section>
