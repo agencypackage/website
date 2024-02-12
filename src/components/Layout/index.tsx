@@ -16,7 +16,7 @@ export default function Layout({
           data-domain="ungeivaerksattere.dk"
           strategy="lazyOnload"
         />
-        <div className={`${className}`}>
+        <div style={{background: "radial-gradient(circle, rgba(0,0,26,1) 35%, rgba(1,1,66,1) 100%)"}} className={`${className}`}>
             <Navbar />
             <div className="pt-[90px]">
             {children}

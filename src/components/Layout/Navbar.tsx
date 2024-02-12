@@ -2,12 +2,14 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <nav className="h-[90px] flex items-center border-b-[1px] border-gray-900 fixed w-full">
+        <nav style={{backdropFilter: "blur(10px)"}} className="h-[80px] bg-transparent flex items-center fixed w-full">
             <div className="text-white w-[94%] mx-auto flex items-center justify-between">
-                <Link href={"/"}>agencypackage.com</Link>
+                <Link href={"/"}>
+                    <img className="w-[200px]" src="/agencypackage.svg"></img>
+                </Link>
 
 
-                <div className="flex items-center gap-[40px] font-[500]">
+                <div className="flex items-center gap-[40px] text-[15px] font-[500]">
                     <Link href={"/"}>
                     Features
                     </Link>
@@ -19,7 +21,7 @@ export default function Navbar() {
                     </Link>
                 </div>
                 
-                <div className="flex items-center gap-[20px] font-[500]">
+                <div className="flex items-center gap-[20px] text-[15px] font-[500]">
                     <Link href={"/"}>
                     Join community
                     </Link>

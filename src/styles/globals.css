@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 * {
-
   font-family: "Inter Tight";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #00001a;
 }
