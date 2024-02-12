@@ -2,9 +2,9 @@ import Link from "next/link"
 import SectionStarter from "./sectionstarter"
 
 const pricingData = [
-    {bundleName: "Starter", bundleDescription: "Test the contents of our work", price: "Free", paymentPlan: "In full", features: ["Full community access", "Full community access", "Full community access", "Full community access"], noFeatures: ["Full community access", "Full community access", "Full community access", "Full community access"]},
-    {bundleName: "Growth", bundleDescription: "Everything to get you started", price: "$129", paymentPlan: "One time", features: ["Full community access", "Full community access", "Full community access", "Full community access"], noFeatures: ["Full community access", "Full community access", "Full community access", "Full community access"]},
-    {bundleName: "Exclusive", bundleDescription: "Ready to kick-start your agency", price: "$189", paymentPlan: "/mo", features: ["Full community access", "Full community access", "Full community access", "Full community access", "Full community access", "Full community access", "Full community access", "Full community access"], noFeatures: []},
+    {bundleName: "Starter", bundleDescription: "Test the contents of our work", price: "Free", paymentPlan: "/ Forever", features: ["Full community access", "30 minutte consultation"], noFeatures: ["Tairlormade website", "Customised logo", "Email automation setup", "Outreach white papers", "Offer production", "CRM-template"]},
+    {bundleName: "Growth", bundleDescription: "Everything to get you started", price: "$89", paymentPlan: "/ One time", features: ["Full community access", "30 minutte consultation", "Tairlormade website", "Customised logo", "Email automation setup",], noFeatures: ["Outreach white papers", "Offer production", "CRM-template"]},
+    {bundleName: "Exclusive", bundleDescription: "Ready to kick-start your agency", price: "$119", paymentPlan: "/ One time", features: ["Full community access", "30 minutte consultation", "Tairlormade website", "Customised logo", "Email automation setup", "Outreach white papers", "Offer production", "CRM-template"], noFeatures: []},
 ]
 
 export default function Pricing() {
@@ -32,7 +32,7 @@ const PricingCard = (props:any) => {
 
             <div className="mt-[40px] mb-[60px] flex flex-col gap-[14px]">
                 {props.Obj.features.map((v:any) => <div key={v} className="flex items-center gap-[8px]"><img className="w-[20px]" src="/checklist.png"></img>{v}</div>)}
-                {props.Obj.noFeatures.map((v:any) => <div key={v} className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/negativechecklist.png"></img>{v}</div>)}
+                {props.Obj.noFeatures.map((v:any) => <div key={v} className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/remove.png"></img>{v}</div>)}
             </div>
 
             <Link className="block text-center py-[14px] rounded-full bg-blue-600" href={"/apply"}>
@@ -50,7 +50,7 @@ const ModifiedPricingCard = (props:any) => {
             <p>{props.Obj.bundleDescription}</p>
             <div className="mt-[40px] mb-[100px] flex flex-col gap-[14px]">
                 {props.Obj.features.map((v:any) => <div key={v} className="flex items-center gap-[8px]"><img className="w-[20px]" src="/checklist.png"></img>{v}</div>)}
-                {props.Obj.noFeatures.map((v:any) => <div key={v} className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/negativechecklist.png"></img>{v}</div>)}
+                {props.Obj.noFeatures.map((v:any) => <div key={v} className="flex items-center gap-[8px] text-gray-600"><img className="w-[20px]" src="/remove.png"></img>{v}</div>)}
             </div>
 
             <Link className="block text-center py-[14px] rounded-full bg-blue-600" href={"/apply"}>

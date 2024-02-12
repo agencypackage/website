@@ -25,7 +25,7 @@ export default function Navbar() {
                     <Link href={"/"}>
                     Join community
                     </Link>
-                    <Link style={{background: "linear-gradient(338deg, rgba(4,4,133,1) 0%, rgba(4,4,93,1) 17%, rgba(3,3,83,1) 28%, rgba(0,0,40,1) 43%, rgba(0,0,40,1) 62%, rgba(0,0,40,1) 79%, rgba(1,1,96,1) 100%)"}} className="bg-transparent border-[1px] border-gray-800 rounded-full px-[20px] py-[10px]" href={"/apply"}>
+                    <Link className="bg-blue-600 rounded-full px-[20px] py-[10px]" href={"/apply"}>
                     Apply for free
                     </Link>
                 </div>
