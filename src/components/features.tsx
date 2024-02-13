@@ -4,7 +4,7 @@ import SectionStarter from "./sectionstarter"
 const featuresData = [
     {heading: "+45 Website templates", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
     {heading: "+20 Logo presets", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
-    {heading: "+45 Templates", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
+    {heading: "Zapier integrations", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
     {heading: "+45 Templates", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
     {heading: "+45 Templates", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
     {heading: "+45 Templates", description: "Course & community hosting, sales funnels & checkouts, automated email & sms marketing"},
@@ -30,7 +30,7 @@ export default function Features() {
 
 const FeatureCard = (props:any) => {
     return (
-        <div style={{background: "linear-gradient(326deg, rgba(0,0,94,1) 0%, rgba(0,0,49,1) 49%, rgba(0,0,72,1) 100%)"}} className="border-[1px] border-gray-800 text-left rounded-[10px] p-[30px]">
+        <div style={{background: "linear-gradient(326deg, rgba(0,0,94,1) 0%, rgba(0,0,49,1) 49%, rgba(0,0,72,1) 100%)"}} className="border-[1px] border-gray-800 text-left rounded-[20px] p-[30px]">
             <h1 className="text-[24px] font-[500] mb-[20px]">{props.Obj.heading}</h1>
             <p className="text-[18px] font-[400] text-gray-200">{props.Obj.description}</p>
         </div>
