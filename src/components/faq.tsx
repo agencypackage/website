@@ -4,12 +4,12 @@ import { Plus, X } from 'lucide-react';
 const FAQ = () => {
   const faqData = [
     {
-      question: 'What is React?',
-      answer: 'React is a JavaScript library for building user interfaces.',
+      question: 'When do i pay?',
+      answer: 'this is a test',
     },
     {
-      question: 'How do I install React?',
-      answer: 'You can install React using npm or yarn by running: npm install react',
+      question: 'What is included?',
+      answer: 'this is a test',
     },
     // Add more FAQ items as needed
   ];
