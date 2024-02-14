@@ -22,7 +22,6 @@ export default function Layout({
             <div className="pt-[90px]">
             {children}
             </div>
-            <Footer />
 
         </div>
       </div>

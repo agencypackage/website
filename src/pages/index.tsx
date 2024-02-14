@@ -1,12 +1,14 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/hero";
-import FAQ from "@/components/faq";
+import Component from "@/components/logoslider";
+import Pricing from "@/components/pricing";
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
-      <FAQ />
+      <Component />
+      <Pricing />
     </Layout>
   );
 }
